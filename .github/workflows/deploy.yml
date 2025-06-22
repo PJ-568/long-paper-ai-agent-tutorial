@@ -1,0 +1,44 @@
+name: 部署文档到 GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+
+    - name: 检出仓库
+      uses: actions/checkout@v4
+    
+    - name: 删除不需要部署的文件
+      run: |
+        rm -rf parts/
+        rm -rf .gitHub/
+        rm 报告模板.html
+    
+    - name: 部署 markdown.html
+      uses: PJ-568/MARKDOWN.HTML@v1.11.1
+
+    - name: 配置 Pages
+      uses: actions/configure-pages@v4
+
+    - name: 上传 Pages Artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: '.'
+
+    - name: 部署到 GitHub Pages
+      uses: actions/deploy-pages@v4
