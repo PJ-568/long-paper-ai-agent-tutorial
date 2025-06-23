@@ -30,7 +30,7 @@ jobs:
         rm 报告模板.html
     
     - name: 部署 markdown.html
-      uses: PJ-568/MARKDOWN.HTML@v1.11.1
+      uses: PJ-568/MARKDOWN.HTML@v1.12.0
 
     - name: 配置 Pages
       uses: actions/configure-pages@v4
