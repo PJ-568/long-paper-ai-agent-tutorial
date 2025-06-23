@@ -1,6 +1,8 @@
 # AI Agent Long Paper Writing Tutorial
 
 > [简体中文](README.md) | English
+>
+> **Note:** This tutorial is translated from [Chinese](README.md). If you find any issues or have suggestions, please feel free to open an issue or pull request.
 
 This tutorial describes how to use the [Roo Code Agent](https://roocode.com) extension for [Visual Studio Code](https://code.visualstudio.com/Download) to write long academic papers.
 
