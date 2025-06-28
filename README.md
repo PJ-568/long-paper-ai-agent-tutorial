@@ -109,7 +109,7 @@
 
 2. 在 Roo Code 新建会话，设定模式为 `Code`，粘贴上一步修改的提示词并发送；
 3. 等待智能体完成第一轮任务；
-4. 用浏览器打开检查`报告模板.html`，查看是否满足要求；
+4. 用浏览器打开检查 `parts/【标题编号】.html`，查看是否满足要求；
 5. 如果不满足要求，请求智能体修改直至要求满足；
 6. 如果满足要求，向智能体发送第二轮任务：``很好。现在：**完成`【标题编号】标题`部分。**``（把`【标题编号】标题`替换为欲编写的标题编号和标题）；
 7. 等待智能体完成第二轮任务；
@@ -126,7 +126,7 @@
 2. 手动将 `parts` 文件夹下的所有文件的内容手动插入至`报告.html`中的对应位置；
 3. 在 Roo Code 新建会话，设定模式为 `Ask`，要求智能体阅读`报告.html`，检查是否存在重复、冗余或不合理的地方，由用户手动修改；
 4. 如果存在重复、冗余的地方，手动删改；如果存在不合理的地方，在要求智能体避开不合理问题的前提下参考[文档撰写](#文档撰写)的步骤 6 至 9，修改该不合理章节；
-5. 查找`报告模板.html`内所有的 `@startuml`，依次将所有 UML 代码逐个粘贴至 [PlantUML Web Server](https://www.plantuml.com/plantuml/uml) 渲染，将渲染后的[图片转为 data url](https://www.lmstfy.icu/Bing/?q=5Zyo57q/5Zu+54mH6L2sIGRhdGEgdXJs) 格式替换掉原 UML 代码块：
+5. 查找`报告.html`内所有的 `@startuml`，依次将所有 UML 代码逐个粘贴至 [PlantUML Web Server](https://www.plantuml.com/plantuml/uml) 渲染，将渲染后的[图片转为 data url](https://www.lmstfy.icu/Bing/?q=5Zyo57q/5Zu+54mH6L2sIGRhdGEgdXJs) 格式替换掉原 UML 代码块：
 
    ```diff
    -   <div class="code-block">
@@ -139,7 +139,7 @@
        </div>
    ```
 
-6. 查找`报告模板.html`内所有的 `【`，依次将所有的需手动添加的[图片或截图转为 data url](https://www.lmstfy.icu/Bing/?q=5Zyo57q/5Zu+54mH6L2sIGRhdGEgdXJs) 格式后替换掉原 diagram 类下元素：
+6. 查找`报告.html`内所有的 `【`，依次将所有的需手动添加的[图片或截图转为 data url](https://www.lmstfy.icu/Bing/?q=5Zyo57q/5Zu+54mH6L2sIGRhdGEgdXJs) 格式后替换掉原 diagram 类下元素：
 
    ```diff
        <div class="diagram">

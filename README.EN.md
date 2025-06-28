@@ -107,7 +107,7 @@ To optimize the report template's style and format:
 
 2. Create new Roo Code session in `Code` mode, paste modified prompt and send;
 3. Wait for first task completion;
-4. Verify `report_template.html` in browser;
+4. Verify `parts/【Section Number】.html` in browser;
 5. If unsatisfied, request modifications;
 6. If satisfied, send next task: ``Good. Now: **Complete the `【Section Number】Section Title` section.**`` (replace with actual section);
 7. Wait for completion;
@@ -124,7 +124,7 @@ These steps require manual operation (currently difficult to automate):
 2. Manually insert contents from `parts` folder into corresponding positions in `report.html`;
 3. Create new Roo Code session in `Ask` mode, request agent review of `report.html` for redundancies/errors;
 4. Manually edit redundancies; for logical errors, follow steps 6-9 in [Document Writing](#document-writing) to revise;
-5. Find all `@startuml` in `report_template.html`, render each via [PlantUML Web Server](https://www.plantuml.com/plantuml/uml), convert images to [data URLs](https://www.lmstfy.icu/Bing/?q=aW1hZ2UgdG8gZGF0YSB1cmwgb25saW5l) and replace:
+5. Find all `@startuml` in `report.html`, render each via [PlantUML Web Server](https://www.plantuml.com/plantuml/uml), convert images to [data URLs](https://www.lmstfy.icu/Bing/?q=aW1hZ2UgdG8gZGF0YSB1cmwgb25saW5l) and replace:
 
    ```diff
    -   <div class="code-block">
@@ -137,7 +137,7 @@ These steps require manual operation (currently difficult to automate):
        </div>
    ```
 
-6. Find all `【` in `report_template.html`, convert required screenshots to [data URLs](https://www.lmstfy.icu/Bing/?q=aW1hZ2UgdG8gZGF0YSB1cmwgb25saW5l) and replace:
+6. Find all `【` in `report.html`, convert required screenshots to [data URLs](https://www.lmstfy.icu/Bing/?q=aW1hZ2UgdG8gZGF0YSB1cmwgb25saW5l) and replace:
 
    ```diff
        <div class="diagram">
