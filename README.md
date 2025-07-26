@@ -4,6 +4,8 @@
 
 本教程描述了如何使用 [Visual Studio Code](https://code.visualstudio.com/Download) 的 [Roo Code 智能体](https://roocode.com)扩展撰写长论文。
 
+……也许我有时间和精力的时候应该去写一个自动化脚本或 MCP。
+
 ## 教程
 
 ### 安装依赖
@@ -16,7 +18,7 @@
 1. 启动 [Visual Studio Code](https://code.visualstudio.com/Download)；
 2. 安装项目环境相关扩展（可选。如果您有已完成的项目供参考则推荐完成这一步）；
 3. VS Code 内安装 [Roo Code](https://roocode.com) 扩展；
-4. 点击左侧袋鼠（Roo Code）图标配置大预言模型提供商 API 和模型（模型的选用标准应以上下文长度更长优先；~~目前~~`截止 2025 年 6 月 22 日`推荐使用 DeepSeek-V3-0324，因为许多平台提供免费 API 调用）；
+4. 点击左侧袋鼠（Roo Code）图标配置大预言模型提供商 API 和模型（模型的选用标准应以上下文长度更长优先；~~目前~~`截止 2025 年 7 月 26 日`推荐使用 Qwen3-325B，因为其支持较长上下文且部分平台提供免费 API 调用）；
 5. 在 Roo Code 的`上下文`设置中适量提高`并发文件读取限制`，并将`文件读取自动截断阈值`设置为`始终读取整个文件`。
 
 ### 项目配置

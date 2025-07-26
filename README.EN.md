@@ -6,6 +6,8 @@
 
 This tutorial describes how to use the [Roo Code Agent](https://roocode.com) extension for [Visual Studio Code](https://code.visualstudio.com/Download) to write long academic papers.
 
+...Perhaps I should write an automation script or MCP when I have the time and energy.
+
 ## Tutorial
 
 ### Install Dependencies
@@ -18,7 +20,7 @@ This tutorial describes how to use the [Roo Code Agent](https://roocode.com) ext
 1. Launch [Visual Studio Code](https://code.visualstudio.com/Download);
 2. Install project environment-related extensions (optional. Recommended if you have reference projects);
 3. Install the [Roo Code](https://roocode.com) extension within VS Code;
-4. Click the left-side kangaroo (Roo Code) icon to configure the LLM provider API and model (prioritize models with longer context windows; `as of June 22, 2025`, DeepSeek-V3-0324 is recommended as many platforms offer free API access);
+4. Click the left-side kangaroo (Roo Code) icon to configure the LLM provider API and model (prioritize models with longer context windows; `As of July 26, 2025`, it is recommended to use Qwen3-325B, as it supports longer context and some platforms offer free API calls.);
 5. In Roo Code's `Context` settings, appropriately increase the `Concurrent File Read Limit` and set `File Read Auto-Truncate Threshold` to `Always Read Entire File`.
 
 ### Project Setup
